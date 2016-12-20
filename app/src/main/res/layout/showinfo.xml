@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/iteminfo" android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="0dp"
+	android:weightSum="1"
+	>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="数据管理"
+			android:textSize="40dp"
+			android:textColor="#cd7f32"
+			android:gravity="center"/>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/linearLayout1"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:layout_weight="0.06">
+		<Button android:text="支出信息"
+			android:id="@+id/btnoutinfo"
+			android:layout_weight="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:textColor="#8C6931"
+		/>
+		<Button android:text="收入信息"
+			android:id="@+id/btnininfo"
+			android:layout_marginLeft="10dp"
+			android:layout_weight="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/btnoutinfo"
+			android:textSize="20sp"
+			android:textColor="#8C6931"
+			/>
+		<Button android:text="便签信息"
+			android:id="@+id/btnflaginfo"
+			android:layout_marginLeft="10dp"
+			android:layout_weight="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/btnininfo"
+			android:textSize="20sp"
+			android:textColor="#8C6931"
+			/>
+		</LinearLayout>
+
+	<LinearLayout android:id="@+id/linearLayout2"
+			android:layout_height="wrap_content" 
+			android:layout_width="match_parent"
+			android:orientation="vertical" 
+			android:layout_weight="0.94">
+		<ListView android:id="@+id/lvinfo" 
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent"
+			android:scrollbarAlwaysDrawVerticalTrack="true"
+			/>
+	</LinearLayout>
+</LinearLayout>
